@@ -53,8 +53,23 @@
   </ul>
 </body>
  <article>
-    <div class="boxed" align="left">
-    cheese.
-    </div>
+    <div id="googleMap1" style="width:400px;height:300px;"></div>
+        <script>
+        function myMap() {
+          var mapOptions1 = {
+            center: new google.maps.LatLng(41.823998, -87.852576),
+            zoom:15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+
+          var map1 = new google.maps.Map(document.getElementById("googleMap1"),mapOptions1);
+
+        }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+      <div class="boxed" align="left">
+      cheese.
+      </div>
   </article>
 </body>
